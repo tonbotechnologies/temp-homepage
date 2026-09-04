@@ -7,106 +7,35 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
       body {
         margin: 0;
         height: 100vh;
         height: 100dvh;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         background-color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        color: #686868;
       }
 
-      main {
-        position: relative;
+      img {
         max-height: 80vh;
         max-height: 80dvh;
         max-width: 80vw;
         max-width: 80dvw;
-        aspect-ratio: 120 / 190;
-        overflow: hidden;
-        border: 0.5vh solid #efefef;
-        border: 0.5dvh solid #efefef;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fdfdfd;
-      }
-
-      main::before {
-        content: "";
-        position: absolute;
-        inset-block: 0;
-        left: 50%;
-        width: 30%;
-        transform: translateX(-50%);
-        border-left: 0.5vh solid #f8f8f8;
-        border-left: 0.5dvh solid #f8f8f8;
-        border-right: 0.5vh solid #f8f8f8;
-        border-right: 0.5dvh solid #f8f8f8;
-        background-color: #ffffff;
-      }
-
-      main::after {
-        content: "";
-        position: absolute;
-        inset-block: 0;
-        left: 5%;
-        border-left: 1vh solid #f03121;
-        border-left: 1dvh solid #f03121;
-      }
-
-      img {
-        height: 50%;
-        z-index: 1;
-      }
-
-      footer {
-        position: fixed;
-        right: 10vw;
-        right: 10dvw;
-        bottom: 10vh;
-        bottom: 10dvh;
-        font-family: sans-serif;
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
-        color: #686868
-      }
-
-      p {
-        text-align: right;
       }
 
     </style>
   </head>
 
   <body>
-    <main>
-      <img
-        src="lines.svg"
-        alt="red lines"
-      >
-      <img
-        src="symbol-r.svg"
-        alt="Tonbo Technologies Symbol (Tonbo Red)"
-      >
-      <img
-        src="lines.svg"
-        alt="red lines"
-      >
-    </main>
-    <footer>
-      <p>
-        Tonbo Technologies Inc.
-      </p>
-      <p>
-        Coming Soon.
-      </p>
-    </footer>
+    <header>Tonbo Technologies Inc.</header>
+    <img src="main-visual.svg" alt="Main Visual">
+    <footer>Coming Soon.</footer>
   </body>
 
 </html>
